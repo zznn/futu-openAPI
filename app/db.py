@@ -19,7 +19,6 @@ config = {
 connection = pymysql.connect(**config)
 
 def get_token(appid, card, isTrade):
-	# type_token = token_type(markettype)
 	try:
 		connection.ping()
 	except Exception as e:	
@@ -48,12 +47,10 @@ def get_token(appid, card, isTrade):
 		connection.rollback()
 		db_logger.error('get FAIL ,following as:%s' % str(e), exc_info = True)
 	finally:
-		# pass
 		connection.close()
 
 
 def save_update_token(account, appid, market, token, card, isTrade, card_desc = None):
-	# type_token = token_type(markettype)
 	try:
 		connection.ping()
 	except Exception as e:	
