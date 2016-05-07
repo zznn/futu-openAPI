@@ -9,7 +9,7 @@ import json
 
 app = Flask(__name__)
 
-logging.config.fileConfig('logging.conf')
+logging.config.fileConfig('./conf/logging.conf')
 no_db_logger = logging.getLogger()
 
 def check_parameters(pjson):
