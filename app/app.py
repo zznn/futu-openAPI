@@ -11,7 +11,6 @@ app = Flask(__name__)
 
 logging.config.fileConfig('logging.conf')
 no_db_logger = logging.getLogger()
-# db_logger = logging.getLogger('db')
 
 def check_parameters(pjson):
 	if not pjson or not 'app_account' in pjson or not 'card' in pjson or not 'appid' in pjson:
