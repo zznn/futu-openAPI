@@ -1,0 +1,952 @@
+2016-05-03 18:36:33,830 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:37:07,792 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:37:39,096 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:38:32,771 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:38:39,033 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:38:43,272 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:38:57,616 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:39:50,952 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:39:51,766 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:39:59,599 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:39:59,759 - testFlask.py:25 - nodb - log_handler - INFO - ÕË»§ÏÖ½ğ³É¹¦
+2016-05-03 18:40:49,092 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:40:49,248 - testFlask.py:25 - nodb - log_handler - INFO - ÕË»§ĞÅÏ¢³É¹¦
+2016-05-03 18:41:22,777 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:41:23,000 - testFlask.py:25 - nodb - log_handler - INFO - ÕË»§³Ö²Ö³É¹¦
+2016-05-03 18:42:08,423 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:42:08,609 - testFlask.py:25 - nodb - log_handler - INFO - ÕË»§³Ö²Ö³É¹¦
+2016-05-03 18:43:12,495 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:43:12,666 - testFlask.py:25 - nodb - log_handler - INFO - ¶©µ¥ÁĞ±í³É¹¦
+2016-05-03 18:44:16,207 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:44:16,372 - testFlask.py:25 - nodb - log_handler - INFO - ½»Ò×ÁĞ±í³É¹¦
+2016-05-03 18:58:36,066 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:58:36,243 - testFlask.py:25 - nodb - log_handler - INFO - ½»Ò×ÁĞ±í³É¹¦
+2016-05-03 18:59:32,032 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:59:42,207 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:59:42,352 - testFlask.py:25 - nodb - log_handler - INFO - ½»Ò×ÁĞ±í³É¹¦
+2016-05-03 18:59:42,394 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 18:59:42,583 - test_db.py:92 - db.test_db - save_update_token - ERROR - update²Ù×÷Ê§°Ü£¬ÏêÇéÈçÏÂ:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''tradetoken' = 'KG4-CDd_2b78IDdKom8-KXrKlXkvKewqGzlUxTbv7wo9Np42gNKG3JYij43MaVej' at line 1")
+Traceback (most recent call last):
+  File "D:\Program Files\Sublime Text 3\openAPIwithFlask\test_db.py", line 87, in save_update_token
+    cursor.execute(sql, (token_type, token, card, appid))
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 308, in _query
+    conn.query(q)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1002, in _read_query_result
+    result.read()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''tradetoken' = 'KG4-CDd_2b78IDdKom8-KXrKlXkvKewqGzlUxTbv7wo9Np42gNKG3JYij43MaVej' at line 1")
+2016-05-03 19:01:02,878 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 19:01:08,012 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 19:01:33,608 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 19:01:37,334 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 19:08:42,989 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 19:09:24,222 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 19:09:24,439 - test_db.py:92 - db.test_db - save_update_token - ERROR - update²Ù×÷Ê§°Ü£¬ÏêÇéÈçÏÂ:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''tradetoken' = 'T8GEU2aDa33h15rz_BWO0JrQm26cKdSPJtAoPGjfpoOf8uoA3XHUILQPUhEu1zD8' at line 1")
+Traceback (most recent call last):
+  File "D:\Program Files\Sublime Text 3\openAPIwithFlask\test_db.py", line 87, in save_update_token
+    cursor.execute(sql, (token_type, token, card, appid))
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 308, in _query
+    conn.query(q)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1002, in _read_query_result
+    result.read()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''tradetoken' = 'T8GEU2aDa33h15rz_BWO0JrQm26cKdSPJtAoPGjfpoOf8uoA3XHUILQPUhEu1zD8' at line 1")
+2016-05-03 19:11:58,565 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 19:12:02,484 - test_db.py:55 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 19:12:02,611 - test_db.py:92 - db.test_db - save_update_token - ERROR - update²Ù×÷Ê§°Ü£¬ÏêÇéÈçÏÂ:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''tradetoken' = 'MAtM35UstRG6rfSGNOzp3lXID6AF3lsq6GKnLaMqVDHpwPyd6_4_CazycRdG5IKW' at line 1")
+Traceback (most recent call last):
+  File "D:\Program Files\Sublime Text 3\openAPIwithFlask\test_db.py", line 87, in save_update_token
+    cursor.execute(sql, (token_type, token, card, appid))
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 308, in _query
+    conn.query(q)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1002, in _read_query_result
+    result.read()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''tradetoken' = 'MAtM35UstRG6rfSGNOzp3lXID6AF3lsq6GKnLaMqVDHpwPyd6_4_CazycRdG5IKW' at line 1")
+2016-05-03 19:15:57,181 - test_db.py:56 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 19:16:16,911 - test_db.py:56 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 19:23:33,215 - test_db.py:56 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 19:27:03,030 - test_db.py:56 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 19:29:40,449 - test_db.py:92 - db.test_db - save_update_token - ERROR - update²Ù×÷Ê§°Ü£¬ÏêÇéÈçÏÂ:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''tradetoken' = 'vp0k0Wn5SHrpsJdj25V6r7BwJHXeRIz5SRU_fJQYlNh1O4kd6_VWFyay3XpfhkYH' at line 1")
+Traceback (most recent call last):
+  File "D:\Program Files\Sublime Text 3\openAPIwithFlask\test_db.py", line 87, in save_update_token
+    cursor.execute(sql, (token_type, token, card, appid))
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 308, in _query
+    conn.query(q)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1002, in _read_query_result
+    result.read()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''tradetoken' = 'vp0k0Wn5SHrpsJdj25V6r7BwJHXeRIz5SRU_fJQYlNh1O4kd6_VWFyay3XpfhkYH' at line 1")
+2016-05-03 19:32:23,619 - test_db.py:92 - db.test_db - save_update_token - ERROR - update²Ù×÷Ê§°Ü£¬ÏêÇéÈçÏÂ:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''tradetoken' = 'prQM6BF4BvQ8ciTH_CpJ78gy_e9Y9FhgpYJBEVMtpoxKoFCOiv21t55RE3XUI0G2' at line 1")
+Traceback (most recent call last):
+  File "D:\Program Files\Sublime Text 3\openAPIwithFlask\test_db.py", line 87, in save_update_token
+    cursor.execute(sql, (token_type, token, card, appid))
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 308, in _query
+    conn.query(q)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1002, in _read_query_result
+    result.read()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 112, in _check_mysql_exception
+    raise errorclass(errno, errorvalue)
+pymysql.err.ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''tradetoken' = 'prQM6BF4BvQ8ciTH_CpJ78gy_e9Y9FhgpYJBEVMtpoxKoFCOiv21t55RE3XUI0G2' at line 1")
+2016-05-03 19:38:03,906 - test_db.py:90 - db.test_db - save_update_token - INFO - update²Ù×÷³É¹¦
+2016-05-03 20:04:30,875 - testFlask.py:27 - nodb - log_handler - INFO - ÏÂµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:²ÎÊı´íÎó ,ÇëÇó²ÎÊı:{'side': 'BUY', 'price': '90', 'quantity': '100', 'appid': '10000001', 'code': 'BABA', 'app_account': 'aa@bb.com', 'ltype': 'LIMIT', 'card': '1001100200100059'}
+2016-05-03 20:04:45,821 - testFlask.py:27 - nodb - log_handler - INFO - ÏÂµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:²ÎÊı´íÎó ,ÇëÇó²ÎÊı:{'price': '90', 'app_account': 'aa@bb.com', 'quantity': '100', 'appid': '10000001', 'code': 'BABA', 'side': 'BUY', 'ltype': 'LIMIT', 'card': '1001100200100059'}
+2016-05-03 20:06:15,085 - testFlask.py:27 - nodb - log_handler - INFO - ÏÂµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:²ÎÊı´íÎó ,ÇëÇó²ÎÊı:{'price': '90', 'quantity': '1000', 'appid': '10000001', 'code': 'BABA', 'app_account': 'aa@bb.com', 'side': 'BUY', 'ltype': 'LIMIT', 'card': '1001100200100059'}
+2016-05-03 20:08:23,619 - testFlask.py:27 - nodb - log_handler - INFO - ÏÂµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:²ÎÊı´íÎó ,ÇëÇó²ÎÊı:{'side': 'BUY', 'price': '90', 'app_account': 'aa@bb.com', 'code': 'BABA', 'appid': '10000001', 'card': '1001100200100059', 'type': 'LIMIT', 'quantity': '1000'}
+2016-05-03 20:09:46,496 - testFlask.py:25 - nodb - log_handler - INFO - ¶©µ¥ÁĞ±í³É¹¦
+2016-05-03 20:09:57,454 - testFlask.py:25 - nodb - log_handler - INFO - ¶©µ¥ÁĞ±í³É¹¦
+2016-05-03 20:13:20,707 - testFlask.py:25 - nodb - log_handler - INFO - ÏÂµ¥³É¹¦
+2016-05-03 20:16:13,473 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡¶©µ¥ÁĞ±í³É¹¦
+2016-05-03 20:17:39,642 - testFlask.py:25 - nodb - log_handler - INFO - ¸Äµ¥³É¹¦
+2016-05-03 20:18:13,565 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡¶©µ¥ÁĞ±í³É¹¦
+2016-05-03 20:19:19,812 - testFlask.py:25 - nodb - log_handler - INFO - ³·µ¥³É¹¦
+2016-05-03 20:19:42,219 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡¶©µ¥ÁĞ±í³É¹¦
+2016-05-03 20:20:54,505 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-03 20:23:24,904 - test_db.py:57 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 20:23:24,906 - test_db.py:57 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 20:23:25,338 - testFlask.py:27 - nodb - log_handler - INFO - »ñÈ¡ÕË»§³Ö²ÖÊ§°Ü£¬Ê§°ÜÔ­Òò:auth failed! error_code:1 msg:³öÏÖÎ´Öª´íÎó£¬Äú¿ÉÒÔÔÚ·´À¡½¨ÒéÖĞ¸øÎÒÃÇÁôÑÔ£¬·½±ãÎÒÃÇ¶¨Î»ÎÊÌâ¡£ ,ÇëÇó²ÎÊı:{'appid': '10000001', 'app_account': 'aa@bb.com', 'card': '1001100200100059'}
+2016-05-03 20:23:45,735 - test_db.py:57 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 20:23:45,737 - test_db.py:57 - db.test_db - get_token - INFO - get²Ù×÷³É¹¦
+2016-05-03 20:23:45,849 - testFlask.py:27 - nodb - log_handler - INFO - »ñÈ¡ÕË»§³Ö²ÖÊ§°Ü£¬Ê§°ÜÔ­Òò:auth failed! error_code:1 msg:³öÏÖÎ´Öª´íÎó£¬Äú¿ÉÒÔÔÚ·´À¡½¨ÒéÖĞ¸øÎÒÃÇÁôÑÔ£¬·½±ãÎÒÃÇ¶¨Î»ÎÊÌâ¡£ ,ÇëÇó²ÎÊı:{'appid': '10000001', 'app_account': 'aa@bb.com', 'card': '1001100200100059'}
+2016-05-03 20:29:34,028 - test_db.py:58 - db.test_db - get_token - INFO - ²ÎÊıÎª: r
+2016-05-03 20:29:34,029 - test_db.py:58 - db.test_db - get_token - INFO - ²ÎÊıÎª: z
+2016-05-03 20:29:34,455 - testFlask.py:27 - nodb - log_handler - INFO - »ñÈ¡ÕË»§³Ö²ÖÊ§°Ü£¬Ê§°ÜÔ­Òò:auth failed! error_code:1 msg:³öÏÖÎ´Öª´íÎó£¬Äú¿ÉÒÔÔÚ·´À¡½¨ÒéÖĞ¸øÎÒÃÇÁôÑÔ£¬·½±ãÎÒÃÇ¶¨Î»ÎÊÌâ¡£ ,ÇëÇó²ÎÊı:{'appid': '10000001', 'app_account': 'aa@bb.com', 'card': '1001100200100059'}
+2016-05-03 20:30:02,693 - test_db.py:58 - db.test_db - get_token - INFO - ²ÎÊıÎª: r
+2016-05-03 20:30:02,695 - test_db.py:58 - db.test_db - get_token - INFO - ²ÎÊıÎª: z
+2016-05-03 20:30:03,163 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-03 20:30:27,296 - test_db.py:58 - db.test_db - get_token - INFO - ²ÎÊıÎª: rxu6CEYMSBrB6zSyOKjjk8j-17wRYw0qANky1xHuXPMpqUSVQaUotoBK1LV7OhMR
+2016-05-03 20:30:27,298 - test_db.py:58 - db.test_db - get_token - INFO - ²ÎÊıÎª: zFHNNNQNbav_hWatroPbEW47gYk7lIdMO0yUmHWwGzD-D6qYT1Vu1VQZU5BqtK0Q4wuUyXOyRvc24HLSX_iOkg==
+2016-05-03 20:30:27,764 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-03 20:32:00,617 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-03 20:32:57,916 - test_db.py:57 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:32:57,918 - test_db.py:57 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:32:58,410 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-03 20:33:01,705 - test_db.py:57 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:33:01,707 - test_db.py:57 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:33:01,869 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-03 20:40:44,140 - test_db.py:58 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:40:44,145 - test_db.py:58 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:40:44,657 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-03 20:40:46,878 - test_db.py:58 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:40:46,883 - test_db.py:58 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:40:47,052 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-03 20:45:02,283 - testFlask.py:32 - nodb - hello_world - INFO - server start#####
+2016-05-03 20:47:05,762 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:47:05,763 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:47:06,239 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-03 20:47:06,326 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:47:06,328 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:47:06,484 - testFlask.py:25 - nodb - log_handler - INFO - ÏÂµ¥³É¹¦
+2016-05-03 20:47:41,324 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:47:41,325 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:47:41,483 - testFlask.py:25 - nodb - log_handler - INFO - ÏÂµ¥³É¹¦
+2016-05-03 20:49:00,409 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:49:00,411 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:49:00,556 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-03 20:49:15,745 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:49:15,746 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:49:15,893 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-03 20:51:00,797 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:51:00,799 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:51:00,949 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-03 20:52:32,841 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:52:32,842 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:52:33,002 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-03 20:53:54,533 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:53:54,534 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:53:54,688 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-03 20:54:09,062 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:54:09,064 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:54:09,437 - testFlask.py:25 - nodb - log_handler - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-03 20:59:57,568 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:59:57,570 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 20:59:58,045 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-03 21:00:09,322 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:00:09,324 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:00:09,479 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-03 21:00:29,299 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:00:29,300 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:00:29,454 - testFlask.py:99 - nodb - get_list_orders - INFO - »ñÈ¡¶©µ¥ÁĞ±í³É¹¦
+2016-05-03 21:01:39,868 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:01:39,869 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:01:40,032 - testFlask.py:87 - nodb - get_account_portfolio - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-03 21:04:01,392 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:04:01,394 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:04:01,543 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-03 21:06:13,021 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:06:13,023 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:06:13,181 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-03 21:07:25,440 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:07:25,442 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:07:25,595 - testFlask.py:87 - nodb - get_account_portfolio - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-03 21:07:59,299 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:07:59,300 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:07:59,443 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-03 21:08:48,636 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:08:48,638 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:08:48,790 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥³É¹¦
+2016-05-03 21:09:50,328 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:09:50,329 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-03 21:09:50,473 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥³É¹¦
+2016-05-04 10:00:10,532 - test_db.py:72 - db.test_db - save_update_token - ERROR - insert²Ù×÷Ê§°Ü£¬ÏêÇéÈçÏÂ:(1366, "Incorrect string value: '\\xE6\\xB8\\xAF\\xE8\\x82\\xA1...' for column 'card_infor' at row 1")
+Traceback (most recent call last):
+  File "D:\Program Files\Sublime Text 3\openAPIwithFlask\test_db.py", line 62, in save_update_token
+    cursor.execute(sql1, (account, token, card, appid, market, card_desc))
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 308, in _query
+    conn.query(q)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1002, in _read_query_result
+    result.read()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1366, "Incorrect string value: '\\xE6\\xB8\\xAF\\xE8\\x82\\xA1...' for column 'card_infor' at row 1")
+2016-05-04 10:03:22,297 - test_db.py:72 - db.test_db - save_update_token - ERROR - insert²Ù×÷Ê§°Ü£¬ÏêÇéÈçÏÂ:(1366, "Incorrect string value: '\\xE6\\xB8\\xAF\\xE8\\x82\\xA1...' for column 'card_infor' at row 1")
+Traceback (most recent call last):
+  File "D:\Program Files\Sublime Text 3\openAPIwithFlask\test_db.py", line 62, in save_update_token
+    cursor.execute(sql1, (account, token, card, appid, market, card_desc))
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 308, in _query
+    conn.query(q)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1002, in _read_query_result
+    result.read()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1366, "Incorrect string value: '\\xE6\\xB8\\xAF\\xE8\\x82\\xA1...' for column 'card_infor' at row 1")
+2016-05-04 10:06:43,137 - test_db.py:72 - db.test_db - save_update_token - ERROR - insert²Ù×÷Ê§°Ü£¬ÏêÇéÈçÏÂ:(1366, "Incorrect string value: '\\xE6\\xB8\\xAF\\xE8\\x82\\xA1...' for column 'card_infor' at row 1")
+Traceback (most recent call last):
+  File "D:\Program Files\Sublime Text 3\openAPIwithFlask\test_db.py", line 62, in save_update_token
+    cursor.execute(sql1, (account, token, card, appid, market, card_desc))
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 308, in _query
+    conn.query(q)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1002, in _read_query_result
+    result.read()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1366, "Incorrect string value: '\\xE6\\xB8\\xAF\\xE8\\x82\\xA1...' for column 'card_infor' at row 1")
+2016-05-04 10:06:43,139 - testFlask.py:162 - nodb - save_token - INFO - accesstoken±£´æ³É¹¦
+2016-05-04 10:11:18,787 - test_db.py:72 - db.test_db - save_update_token - ERROR - insert²Ù×÷Ê§°Ü£¬ÏêÇéÈçÏÂ:(1366, "Incorrect string value: '\\xE6\\xB8\\xAF\\xE8\\x82\\xA1...' for column 'card_infor' at row 1")
+Traceback (most recent call last):
+  File "D:\Program Files\Sublime Text 3\openAPIwithFlask\test_db.py", line 62, in save_update_token
+    cursor.execute(sql1, (account, token, card, appid, market, card_desc))
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 308, in _query
+    conn.query(q)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1002, in _read_query_result
+    result.read()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1366, "Incorrect string value: '\\xE6\\xB8\\xAF\\xE8\\x82\\xA1...' for column 'card_infor' at row 1")
+2016-05-04 10:11:18,802 - testFlask.py:162 - nodb - save_token - INFO - accesstoken±£´æ³É¹¦
+2016-05-04 10:20:41,700 - test_db.py:72 - db.test_db - save_update_token - ERROR - insert²Ù×÷Ê§°Ü£¬ÏêÇéÈçÏÂ:(1366, "Incorrect string value: '\\xE6\\xB8\\xAF\\xE8\\x82\\xA1...' for column 'card_infor' at row 1")
+Traceback (most recent call last):
+  File "D:\Program Files\Sublime Text 3\openAPIwithFlask\test_db.py", line 62, in save_update_token
+    cursor.execute(sql1, (account, token, card, appid, market, card_desc))
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 158, in execute
+    result = self._query(query)
+  File "D:\Python35\lib\site-packages\pymysql\cursors.py", line 308, in _query
+    conn.query(q)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1002, in _read_query_result
+    result.read()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "D:\Python35\lib\site-packages\pymysql\connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "D:\Python35\lib\site-packages\pymysql\err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1366, "Incorrect string value: '\\xE6\\xB8\\xAF\\xE8\\x82\\xA1...' for column 'card_infor' at row 1")
+2016-05-04 10:20:41,733 - testFlask.py:162 - nodb - save_token - INFO - accesstoken±£´æ³É¹¦
+2016-05-04 10:23:46,503 - test_db.py:68 - db.test_db - save_update_token - INFO - insert²Ù×÷³É¹¦
+2016-05-04 10:23:46,510 - testFlask.py:162 - nodb - save_token - INFO - accesstoken±£´æ³É¹¦
+2016-05-04 11:09:34,685 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:09:34,689 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:11:01,950 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:11:01,955 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:11:02,412 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:13:37,959 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:13:37,964 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:13:53,952 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:13:53,957 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:15:18,565 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:15:18,569 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:15:19,391 - testFlask.py:65 - nodb - get_account_detail - INFO - »ñÈ¡ÕË»§ĞÅÏ¢³É¹¦
+2016-05-04 11:15:39,936 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:15:39,940 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:15:40,095 - testFlask.py:87 - nodb - get_account_portfolio - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-04 11:16:56,112 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:16:56,116 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:16:56,566 - testFlask.py:87 - nodb - get_account_portfolio - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-04 11:17:21,157 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:17:21,161 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:17:21,303 - testFlask.py:99 - nodb - get_list_orders - INFO - »ñÈ¡¶©µ¥ÁĞ±í³É¹¦
+2016-05-04 11:18:10,439 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:18:10,443 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:18:10,573 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:18:15,220 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:18:15,224 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:18:15,402 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:18:20,774 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:18:20,779 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:18:20,913 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:18:30,480 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:18:30,484 - test_db.py:34 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:18:30,615 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:27,978 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:27,984 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:28,428 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:29,838 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:29,844 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:29,971 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:31,424 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:31,430 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:31,557 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:32,582 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:32,588 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:32,715 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:33,642 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:33,649 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:33,784 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:34,687 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:34,693 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:34,819 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:35,647 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:35,653 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:35,779 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:36,623 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:36,628 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:36,755 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:37,546 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:37,552 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:37,679 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:38,333 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:38,338 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:38,468 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:38,947 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:38,953 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:39,127 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:39,427 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:39,433 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:39,567 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:39,952 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:39,957 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:40,093 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:40,507 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:40,513 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:40,647 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:19:41,285 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:41,291 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:19:41,426 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 11:22:42,851 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:22:42,852 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:22:42,976 - test_db.py:82 - db.test_db - save_update_token - INFO - update²Ù×÷³É¹¦
+2016-05-04 11:23:41,424 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:23:41,429 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:23:41,600 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:ÏÖÔÚ²»ÊÇ½»Ò×Ê±¼ä ,ÇëÇó²ÎÊı:{'appid': '10000001', 'app_account': 'aa@bb.com', 'quantity': 100, 'code': '90008', 'price': 1.5, 'side': 'BUY', 'type': 'E', 'card': '1001100100100059'}
+2016-05-04 11:28:55,770 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:28:55,771 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:28:55,980 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:ÏÖÔÚ²»ÊÇ½»Ò×Ê±¼ä ,ÇëÇó²ÎÊı:{'appid': '10000001', 'app_account': 'aa@bb.com', 'quantity': 100, 'code': '90008', 'price': 1.5, 'side': 'BUY', 'type': 'E', 'card': '1001100100100059'}
+2016-05-04 11:29:29,129 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:29:29,130 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:29:29,264 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:ÏÖÔÚ²»ÊÇ½»Ò×Ê±¼ä ,ÇëÇó²ÎÊı:{'appid': '10000001', 'app_account': 'aa@bb.com', 'quantity': 100, 'code': '90008', 'price': 1.5, 'side': 'BUY', 'type': 'E', 'card': '1001100100100059'}
+2016-05-04 11:30:31,306 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:30:31,308 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:30:31,437 - test_db.py:82 - db.test_db - save_update_token - INFO - update²Ù×÷³É¹¦
+2016-05-04 11:31:53,396 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:31:53,397 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:31:53,547 - testFlask.py:87 - nodb - get_account_portfolio - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-04 11:33:19,124 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:19,125 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:19,256 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:33:26,166 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:26,168 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:26,307 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:33:41,854 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:41,855 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:41,984 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:33:47,739 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:47,740 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:47,867 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:33:53,657 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:53,658 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:53,785 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:33:56,205 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:56,207 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:56,334 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:33:58,259 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:58,260 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:33:58,389 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:34:02,225 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:34:02,226 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡ÁîÅÆ
+2016-05-04 11:34:02,365 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:37:21,446 - test_db.py:82 - db.test_db - save_update_token - INFO - update²Ù×÷³É¹¦
+2016-05-04 11:37:21,454 - testFlask.py:162 - nodb - save_token - INFO - accesstoken±£´æ³É¹¦
+2016-05-04 11:46:59,800 - test_db.py:82 - db.test_db - save_update_token - INFO - update²Ù×÷³É¹¦
+2016-05-04 11:46:59,807 - testFlask.py:163 - nodb - save_token - INFO - accesstoken±£´æ³É¹¦
+2016-05-04 11:47:07,710 - test_db.py:82 - db.test_db - save_update_token - INFO - update²Ù×÷³É¹¦
+2016-05-04 11:47:07,718 - testFlask.py:163 - nodb - save_token - INFO - accesstoken±£´æ³É¹¦
+2016-05-04 11:50:27,465 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 11:50:27,470 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 11:50:27,930 - testFlask.py:65 - nodb - get_account_detail - INFO - »ñÈ¡ÕË»§ĞÅÏ¢³É¹¦
+2016-05-04 11:51:14,689 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 11:51:14,694 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 11:51:14,837 - testFlask.py:65 - nodb - get_account_detail - INFO - »ñÈ¡ÕË»§ĞÅÏ¢³É¹¦
+2016-05-04 11:51:29,126 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 11:51:29,131 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 11:51:29,262 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:56:32,797 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 11:56:32,802 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 11:56:32,948 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:56:35,001 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 11:56:35,008 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 11:56:35,159 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:56:37,211 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 11:56:37,222 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 11:56:37,395 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:56:39,442 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 11:56:39,454 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 11:56:39,638 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 11:56:41,686 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 11:56:41,699 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 11:56:41,855 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 12:03:38,619 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 12:03:38,625 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 12:03:38,752 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 12:03:40,810 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 12:03:40,822 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 12:03:40,992 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 12:07:51,580 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 12:07:51,581 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 12:07:51,709 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 12:07:53,749 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 12:07:53,753 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 12:07:53,918 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 12:08:56,652 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 12:08:56,654 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 12:08:56,783 - testFlask.py:87 - nodb - get_account_portfolio - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-04 12:59:21,922 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 12:59:21,933 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 12:59:23,625 - testFlask.py:87 - nodb - get_account_portfolio - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-04 12:59:28,656 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 12:59:28,666 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 12:59:28,811 - testFlask.py:87 - nodb - get_account_portfolio - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-04 13:02:19,751 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:02:19,762 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:02:19,913 - testFlask.py:99 - nodb - get_list_orders - INFO - »ñÈ¡¶©µ¥ÁĞ±í³É¹¦
+2016-05-04 13:02:44,037 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:02:44,047 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:02:44,055 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥Î´È¡µÃ½»Ò×ÁîÅÆ
+2016-05-04 13:04:47,853 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:04:47,862 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:04:47,868 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥Î´È¡µÃ½»Ò×ÁîÅÆ
+2016-05-04 13:04:55,071 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:04:55,079 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:04:55,086 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥Î´È¡µÃ½»Ò×ÁîÅÆ
+2016-05-04 13:05:01,936 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:05:01,944 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:05:01,952 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥Î´È¡µÃ½»Ò×ÁîÅÆ
+2016-05-04 13:05:43,329 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:05:43,337 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:05:43,474 - test_db.py:82 - db.test_db - save_update_token - INFO - update²Ù×÷³É¹¦
+2016-05-04 13:06:14,973 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:06:14,981 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:06:15,239 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:ÏÖÔÚ²»ÊÇ½»Ò×Ê±¼ä ,ÇëÇó²ÎÊı:{'type': 'E', 'quantity': 100, 'price': 1.5, 'card': '1001100100100059', 'side': 'BUY', 'app_account': 'aa@bb.com', 'code': '90008', 'appid': '10000001'}
+2016-05-04 13:11:59,933 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:11:59,942 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:12:00,100 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:ÏÖÔÚ²»ÊÇ½»Ò×Ê±¼ä ,ÇëÇó²ÎÊı:{'side': 'BUY', 'type': 'E', 'quantity': 100, 'price': 1.5, 'card': '1001100100100059', 'code': '90008', 'app_account': 'aa@bb.com', 'appid': '10000001'}
+2016-05-04 13:15:17,444 - test_db.py:42 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:15:17,451 - test_db.py:42 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:15:17,928 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 13:16:09,198 - test_db.py:42 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:16:09,209 - test_db.py:45 - db.test_db - get_token - INFO - ÉĞÎ´»ñÈ¡tradetoken
+2016-05-04 13:16:09,688 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 13:16:59,493 - test_db.py:42 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:16:59,503 - test_db.py:45 - db.test_db - get_token - INFO - ÉĞÎ´»ñÈ¡tradetoken
+2016-05-04 13:16:59,637 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 13:17:42,312 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:17:42,320 - test_db.py:44 - db.test_db - get_token - INFO - ÉĞÎ´»ñÈ¡tradetoken
+2016-05-04 13:17:42,792 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 13:20:00,976 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:20:00,983 - test_db.py:44 - db.test_db - get_token - INFO - ÉĞÎ´»ñÈ¡tradetoken
+2016-05-04 13:20:01,189 - test_db.py:82 - db.test_db - save_update_token - INFO - update²Ù×÷³É¹¦
+2016-05-04 13:20:36,927 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:20:36,933 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:20:37,082 - testFlask.py:87 - nodb - get_account_portfolio - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-04 13:21:37,914 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:21:37,921 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:21:38,059 - testFlask.py:87 - nodb - get_account_portfolio - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-04 13:21:58,808 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:21:58,814 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:21:59,002 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:´íÎó£¬ÇëÉÔºóÔÙÊÔ ,ÇëÇó²ÎÊı:{'appid': '10000001', 'price': 90, 'code': 'BABA', 'card': '1001100100100059', 'type': 'LIMIT', 'quantity': 1000, 'side': 'BUY', 'app_account': 'aa@bb.com'}
+2016-05-04 13:22:38,918 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:22:38,924 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:22:39,061 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:ÄÚ²¿´íÎó ,ÇëÇó²ÎÊı:{'appid': '10000001', 'price': 0, 'code': 'BABA', 'card': '1001100100100059', 'type': 'MARKET', 'side': 'BUY', 'quantity': 500, 'app_account': 'aa@bb.com'}
+2016-05-04 13:26:02,774 - test_db.py:82 - db.test_db - save_update_token - INFO - insert²Ù×÷³É¹¦
+2016-05-04 13:26:02,782 - testFlask.py:163 - nodb - save_token - INFO - accesstoken±£´æ³É¹¦
+2016-05-04 13:26:20,703 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:26:20,709 - test_db.py:44 - db.test_db - get_token - INFO - ÉĞÎ´»ñÈ¡tradetoken
+2016-05-04 13:26:20,850 - testFlask.py:65 - nodb - get_account_detail - INFO - »ñÈ¡ÕË»§ĞÅÏ¢³É¹¦
+2016-05-04 13:26:36,630 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:26:36,636 - test_db.py:44 - db.test_db - get_token - INFO - ÉĞÎ´»ñÈ¡tradetoken
+2016-05-04 13:26:36,762 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 13:26:49,126 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:26:49,132 - test_db.py:44 - db.test_db - get_token - INFO - ÉĞÎ´»ñÈ¡tradetoken
+2016-05-04 13:26:49,265 - testFlask.py:87 - nodb - get_account_portfolio - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-04 13:27:06,571 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:27:06,578 - test_db.py:44 - db.test_db - get_token - INFO - ÉĞÎ´»ñÈ¡tradetoken
+2016-05-04 13:27:06,703 - testFlask.py:99 - nodb - get_list_orders - INFO - »ñÈ¡¶©µ¥ÁĞ±í³É¹¦
+2016-05-04 13:27:21,479 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:27:21,485 - test_db.py:44 - db.test_db - get_token - INFO - ÉĞÎ´»ñÈ¡tradetoken
+2016-05-04 13:27:21,613 - testFlask.py:109 - nodb - get_list_trades - INFO - »ñÈ¡½»Ò×ÁĞ±í³É¹¦
+2016-05-04 13:27:36,018 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:27:36,024 - test_db.py:44 - db.test_db - get_token - INFO - ÉĞÎ´»ñÈ¡tradetoken
+2016-05-04 13:27:36,148 - test_db.py:82 - db.test_db - save_update_token - INFO - update²Ù×÷³É¹¦
+2016-05-04 13:27:55,220 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:27:55,225 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:27:55,371 - testFlask.py:65 - nodb - get_account_detail - INFO - »ñÈ¡ÕË»§ĞÅÏ¢³É¹¦
+2016-05-04 13:29:22,461 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:29:22,474 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:29:22,626 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 13:29:25,719 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:29:25,732 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:29:25,905 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 13:29:28,943 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:29:28,955 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:29:29,141 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 13:29:32,182 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 13:29:32,194 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 13:29:32,343 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 14:59:08,282 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 14:59:08,290 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 14:59:08,456 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 14:59:11,535 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 14:59:11,548 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 14:59:11,711 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 14:59:14,750 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 14:59:14,762 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 14:59:14,940 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 14:59:17,979 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 14:59:17,991 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 14:59:18,161 - testFlask.py:76 - nodb - get_account_cash - INFO - »ñÈ¡ÕË»§ÏÖ½ğ³É¹¦
+2016-05-04 14:59:39,845 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 14:59:39,850 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 14:59:40,077 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:ÏÖÔÚ²»ÊÇ½»Ò×Ê±¼ä ,ÇëÇó²ÎÊı:{'appid': '10000001', 'price': 1.5, 'code': '90008', 'card': '1001100120012143', 'type': 'E', 'side': 'BUY', 'quantity': 100, 'app_account': 'aa@bb.com'}
+2016-05-04 16:03:39,620 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 16:03:39,626 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 16:03:40,925 - testFlask.py:124 - nodb - place_order - INFO - ÏÂµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:¹ºÂòÁ¦²»×ã ,ÇëÇó²ÎÊı:{'appid': '10000001', 'price': 1.5, 'code': '90008', 'card': '1001100120012143', 'type': 'E', 'quantity': 100, 'side': 'BUY', 'app_account': 'aa@bb.com'}
+2016-05-04 16:03:53,157 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 16:03:53,162 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 16:03:53,303 - testFlask.py:137 - nodb - change_order - INFO - ¸Äµ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:ÄÚ²¿´íÎó ,ÇëÇó²ÎÊı:{'appid': '10000001', 'price': 80, 'app_account': 'aa@bb.com', 'card': '1001100120012143', 'order_id': 'odr_us_sht_trd_svc_51_20160503_100059_1', 'quantity': 500}
+2016-05-04 16:04:06,770 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 16:04:06,775 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 16:04:06,906 - testFlask.py:148 - nodb - cancle_order - INFO - ³·µ¥Ê§°Ü£¬Ê§°ÜÔ­Òò:ÄÚ²¿´íÎó ,ÇëÇó²ÎÊı:{'order_id': 'odr_us_sht_trd_svc_51_20160503_100059_2', 'appid': '10000001', 'app_account': 'aa@bb.com', 'card': '1001100120012143'}
+2016-05-04 16:04:21,518 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡accesstoken
+2016-05-04 16:04:21,524 - test_db.py:41 - db.test_db - get_token - INFO - ³É¹¦´ÓÊı¾İ¿âÖĞ»ñÈ¡tradetoken
+2016-05-04 16:04:21,650 - testFlask.py:87 - nodb - get_account_portfolio - INFO - »ñÈ¡ÕË»§³Ö²Ö³É¹¦
+2016-05-04 19:49:23,119 - testFlask.py:32 - nodb - hello_world - INFO - server start#####
+2016-05-04 19:53:06,641 - test_db.py:48 - db.test_db - get_token - ERROR - getæ“ä½œå¤±è´¥ï¼Œè¯¦æƒ…å¦‚ä¸‹:(1054, "Unknown column 'appid' in 'where clause'")
+Traceback (most recent call last):
+  File "/mnt/hgfs/share/openAPIwithFlask/test_db.py", line 37, in get_token
+    cursor.execute(sql, (card, appid))
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 158, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 308, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1002, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'appid' in 'where clause'")
+2016-05-04 19:53:06,642 - test_db.py:48 - db.test_db - get_token - ERROR - getæ“ä½œå¤±è´¥ï¼Œè¯¦æƒ…å¦‚ä¸‹:(1054, "Unknown column 'appid' in 'where clause'")
+Traceback (most recent call last):
+  File "/mnt/hgfs/share/openAPIwithFlask/test_db.py", line 37, in get_token
+    cursor.execute(sql, (card, appid))
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 158, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 308, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1002, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'appid' in 'where clause'")
+2016-05-04 19:53:06,643 - testFlask.py:65 - nodb - get_account_detail - INFO - è·å–è´¦æˆ·ä¿¡æ¯æœªå–å¾—è®¿é—®ä»¤ç‰Œ
+2016-05-04 20:00:32,852 - test_db.py:48 - db.test_db - get_token - ERROR - getæ“ä½œå¤±è´¥ï¼Œè¯¦æƒ…å¦‚ä¸‹:(1054, "Unknown column 'appid' in 'where clause'")
+Traceback (most recent call last):
+  File "/mnt/hgfs/share/openAPIwithFlask/test_db.py", line 37, in get_token
+    cursor.execute(sql, (card, appid))
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 158, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 308, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1002, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'appid' in 'where clause'")
+2016-05-04 20:00:32,854 - test_db.py:48 - db.test_db - get_token - ERROR - getæ“ä½œå¤±è´¥ï¼Œè¯¦æƒ…å¦‚ä¸‹:(1054, "Unknown column 'appid' in 'where clause'")
+Traceback (most recent call last):
+  File "/mnt/hgfs/share/openAPIwithFlask/test_db.py", line 37, in get_token
+    cursor.execute(sql, (card, appid))
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 158, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 308, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1002, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'appid' in 'where clause'")
+2016-05-04 20:00:32,854 - testFlask.py:76 - nodb - get_account_cash - INFO - è·å–è´¦æˆ·ç°é‡‘æœªå–å¾—è®¿é—®ä»¤ç‰Œ
+2016-05-04 20:12:27,516 - test_db.py:88 - db.test_db - save_update_token - ERROR - æ“ä½œå¤±è´¥ï¼Œè¯¦æƒ…å¦‚ä¸‹:(1054, "Unknown column 'appid' in 'where clause'")
+Traceback (most recent call last):
+  File "/mnt/hgfs/share/openAPIwithFlask/test_db.py", line 71, in save_update_token
+    cursor.execute(sql, (card, appid))
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 158, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 308, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1002, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'appid' in 'where clause'")
+2016-05-04 20:12:27,518 - testFlask.py:166 - nodb - save_token - INFO - accesstokenä¿å­˜å¤±è´¥
+2016-05-04 20:32:49,672 - test_db.py:88 - db.test_db - save_update_token - ERROR - insertæ“ä½œå¤±è´¥ï¼Œè¯¦æƒ…å¦‚ä¸‹:(1054, "Unknown column 'account' in 'field list'")
+Traceback (most recent call last):
+  File "/mnt/hgfs/share/openAPIwithFlask/test_db.py", line 77, in save_update_token
+    cursor.execute(sql1, (account, token, card, appid, market, card_desc))
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 158, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 308, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1002, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'account' in 'field list'")
+2016-05-04 20:32:49,674 - testFlask.py:166 - nodb - save_token - INFO - accesstokenä¿å­˜å¤±è´¥
+2016-05-04 20:33:49,302 - test_db.py:88 - db.test_db - save_update_token - ERROR - insertæ“ä½œå¤±è´¥ï¼Œè¯¦æƒ…å¦‚ä¸‹:(1054, "Unknown column 'market' in 'field list'")
+Traceback (most recent call last):
+  File "/mnt/hgfs/share/openAPIwithFlask/test_db.py", line 77, in save_update_token
+    cursor.execute(sql1, (account, token, card, appid, market, card_desc))
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 158, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/cursors.py", line 308, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 820, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1002, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 1285, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 966, in _read_packet
+    packet.check_error()
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/connections.py", line 394, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 120, in raise_mysql_exception
+    _check_mysql_exception(errinfo)
+  File "/usr/local/lib/python3.4/dist-packages/pymysql/err.py", line 115, in _check_mysql_exception
+    raise InternalError(errno, errorvalue)
+pymysql.err.InternalError: (1054, "Unknown column 'market' in 'field list'")
+2016-05-04 20:33:49,303 - testFlask.py:166 - nodb - save_token - INFO - accesstokenä¿å­˜å¤±è´¥
+2016-05-04 20:36:50,079 - test_db.py:83 - db.test_db - save_update_token - INFO - insertæ“ä½œæˆåŠŸ
+2016-05-04 20:36:50,080 - testFlask.py:163 - nodb - save_token - INFO - accesstokenä¿å­˜æˆåŠŸ
+2016-05-04 20:37:50,457 - test_db.py:41 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-04 20:37:50,459 - test_db.py:44 - db.test_db - get_token - INFO - å°šæœªè·å–tradetoken
+2016-05-04 20:49:10,852 - test_db.py:41 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-04 20:49:10,853 - test_db.py:44 - db.test_db - get_token - INFO - å°šæœªè·å–tradetoken
+2016-05-04 20:49:11,100 - testFlask.py:65 - nodb - get_account_detail - INFO - è·å–è´¦æˆ·ä¿¡æ¯æˆåŠŸ
+2016-05-04 20:50:06,975 - test_db.py:41 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-04 20:50:06,976 - test_db.py:44 - db.test_db - get_token - INFO - å°šæœªè·å–tradetoken
+2016-05-04 20:50:07,111 - testFlask.py:76 - nodb - get_account_cash - INFO - è·å–è´¦æˆ·ç°é‡‘æˆåŠŸ
+2016-05-04 20:50:48,796 - test_db.py:41 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-04 20:50:48,798 - test_db.py:44 - db.test_db - get_token - INFO - å°šæœªè·å–tradetoken
+2016-05-04 20:50:48,948 - testFlask.py:87 - nodb - get_account_portfolio - INFO - è·å–è´¦æˆ·æŒä»“æˆåŠŸ
+2016-05-04 20:51:22,011 - test_db.py:41 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-04 20:51:22,013 - test_db.py:44 - db.test_db - get_token - INFO - å°šæœªè·å–tradetoken
+2016-05-04 20:51:22,163 - testFlask.py:99 - nodb - get_list_orders - INFO - è·å–è®¢å•åˆ—è¡¨æˆåŠŸ
+2016-05-04 20:52:27,562 - test_db.py:41 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-04 20:52:27,563 - test_db.py:44 - db.test_db - get_token - INFO - å°šæœªè·å–tradetoken
+2016-05-04 20:52:27,709 - testFlask.py:109 - nodb - get_list_trades - INFO - è·å–äº¤æ˜“åˆ—è¡¨æˆåŠŸ
+2016-05-04 20:53:31,339 - test_db.py:41 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-04 20:53:31,341 - test_db.py:44 - db.test_db - get_token - INFO - å°šæœªè·å–tradetoken
+2016-05-04 20:53:31,341 - testFlask.py:124 - nodb - place_order - INFO - ä¸‹å•æœªå–å¾—äº¤æ˜“ä»¤ç‰Œ
+2016-05-04 20:53:50,280 - test_db.py:41 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-04 20:53:50,282 - test_db.py:44 - db.test_db - get_token - INFO - å°šæœªè·å–tradetoken
+2016-05-04 20:53:50,282 - testFlask.py:124 - nodb - place_order - INFO - ä¸‹å•æœªå–å¾—äº¤æ˜“ä»¤ç‰Œ
+2016-05-04 20:54:07,287 - test_db.py:41 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-04 20:54:07,289 - test_db.py:44 - db.test_db - get_token - INFO - å°šæœªè·å–tradetoken
+2016-05-04 20:54:07,289 - testFlask.py:137 - nodb - change_order - INFO - æ”¹å•æœªå–å¾—äº¤æ˜“ä»¤ç‰Œ
+2016-05-04 20:54:24,011 - test_db.py:41 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-04 20:54:24,013 - test_db.py:44 - db.test_db - get_token - INFO - å°šæœªè·å–tradetoken
+2016-05-05 11:57:53,746 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 11:57:53,941 - testFlask.py:65 - nodb - get_account_detail - INFO - è·å–è´¦æˆ·ä¿¡æ¯æˆåŠŸ
+2016-05-05 12:01:23,208 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 12:01:23,384 - testFlask.py:76 - nodb - get_account_cash - INFO - è·å–è´¦æˆ·ç°é‡‘æˆåŠŸ
+2016-05-05 12:03:39,441 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 12:06:26,858 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 12:07:38,802 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 12:11:38,228 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 12:48:33,038 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 12:49:23,937 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 12:49:23,938 - testFlask.py:148 - nodb - cancle_order - INFO - æ’¤å•æœªå–å¾—äº¤æ˜“ä»¤ç‰Œ
+2016-05-05 12:51:11,081 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 12:51:11,083 - testFlask.py:150 - nodb - cancle_order - INFO - æ’¤å•æœªå–å¾—äº¤æ˜“ä»¤ç‰Œ
+2016-05-05 12:52:10,850 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 12:53:06,579 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 12:53:52,627 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 12:58:23,170 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:05:05,747 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:07:50,671 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:07:51,593 - test_db.py:84 - db.test_db - save_update_token - INFO - updateæ“ä½œæˆåŠŸ
+2016-05-05 13:09:21,821 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:09:21,822 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 13:18:34,681 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:18:34,683 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 13:18:34,883 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 13:18:38,689 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:18:38,690 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 13:18:38,858 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 13:18:40,452 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:18:40,454 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 13:18:40,602 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 13:18:41,506 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:18:41,508 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 13:18:41,699 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 13:18:42,423 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:18:42,425 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 13:18:42,568 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 13:18:43,302 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:18:43,303 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 13:18:43,449 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 13:18:44,174 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:18:44,176 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 13:18:44,322 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 13:18:45,057 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:18:45,058 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 13:18:45,206 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 13:19:58,440 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:19:58,442 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 13:19:58,586 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 13:20:00,386 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:20:00,388 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 13:20:00,544 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 13:20:31,264 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 13:20:31,266 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 13:20:31,416 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 14:07:01,152 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 14:07:01,154 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 14:07:01,355 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 14:07:09,882 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 14:07:09,883 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 14:07:10,033 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 14:07:53,363 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 14:07:53,365 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 14:08:51,770 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 14:08:51,772 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 14:08:51,937 - testFlask.py:138 - nodb - change_order - INFO - æ”¹å•å¤±è´¥ï¼Œå¤±è´¥åŸå› :è®¢å•ä»·æ ¼å¡«å†™é”™è¯¯ ,è¯·æ±‚å‚æ•°:{'quantity': 500, 'price': 80, 'app_account': 'aa@bb.com', 'card': '1001100200100059', 'order_id': 'odr_us_sht_trd_svc_51_20160505_100059_13', 'appid': '10000001'}
+2016-05-05 14:09:43,613 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 14:09:43,615 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 14:09:43,758 - testFlask.py:138 - nodb - change_order - INFO - æ”¹å•å¤±è´¥ï¼Œå¤±è´¥åŸå› :è®¢å•ä»·æ ¼å¡«å†™é”™è¯¯ ,è¯·æ±‚å‚æ•°:{'app_account': 'aa@bb.com', 'price': 80, 'quantity': 500, 'card': '1001100200100059', 'order_id': 'odr_us_sht_trd_svc_51_20160505_100059_12', 'appid': '10000001'}
+2016-05-05 14:11:20,281 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 14:11:20,283 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 14:11:20,440 - testFlask.py:138 - nodb - change_order - INFO - æ”¹å•å¤±è´¥ï¼Œå¤±è´¥åŸå› :è®¢å•ä»·æ ¼å¡«å†™é”™è¯¯ ,è¯·æ±‚å‚æ•°:{'quantity': 1500, 'price': 90, 'app_account': 'aa@bb.com', 'card': '1001100200100059', 'order_id': 'odr_us_sht_trd_svc_51_20160505_100059_12', 'appid': '10000001'}
+2016-05-05 14:12:40,638 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 14:12:40,640 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 14:12:40,808 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 14:13:12,067 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 14:13:12,069 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 14:13:12,222 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 14:13:12,280 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 14:13:12,282 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 14:13:12,427 - testFlask.py:149 - nodb - cancle_order - INFO - æ’¤å•æˆåŠŸ
+2016-05-05 14:14:18,286 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 14:14:18,287 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 14:14:18,433 - testFlask.py:125 - nodb - place_order - INFO - ä¸‹å•æˆåŠŸ
+2016-05-05 14:14:18,489 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–accesstoken
+2016-05-05 14:14:18,491 - test_db.py:42 - db.test_db - get_token - INFO - æˆåŠŸä»æ•°æ®åº“ä¸­è·å–tradetoken
+2016-05-05 14:14:18,637 - testFlask.py:138 - nodb - change_order - INFO - æ”¹å•æˆåŠŸ
+2016-05-06 06:32:13,711 - _internal.py:87 - _log - INFO -  * Running on http://0.0.0.0:4000/ (Press CTRL+C to quit)
+2016-05-06 06:34:27,641 - app.py:34 - hello_world - INFO - server start#####
+2016-05-06 06:34:27,643 - _internal.py:87 - _log - INFO - 192.168.111.1 - - [06/May/2016 06:34:27] "GET / HTTP/1.1" 200 -
+2016-05-06 06:34:27,668 - _internal.py:87 - _log - INFO - 192.168.111.1 - - [06/May/2016 06:34:27] "GET /favicon.ico HTTP/1.1" 404 -
+2016-05-06 06:34:39,820 - app.py:34 - hello_world - INFO - server start#####
+2016-05-06 06:34:39,821 - _internal.py:87 - _log - INFO - 192.168.111.1 - - [06/May/2016 06:34:39] "GET / HTTP/1.1" 200 -
+2016-05-06 06:34:41,157 - app.py:34 - hello_world - INFO - server start#####
+2016-05-06 06:34:41,159 - _internal.py:87 - _log - INFO - 192.168.111.1 - - [06/May/2016 06:34:41] "GET / HTTP/1.1" 200 -
+2016-05-06 06:34:41,639 - app.py:34 - hello_world - INFO - server start#####
+2016-05-06 06:34:41,640 - _internal.py:87 - _log - INFO - 192.168.111.1 - - [06/May/2016 06:34:41] "GET / HTTP/1.1" 200 -
