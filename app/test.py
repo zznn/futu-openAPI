@@ -1,7 +1,7 @@
 import requests
 
-ipport = '127.0.0.1:5000'
-#ipport = '192.168.111.128:4000'
+# ipport = '127.0.0.1:5000'
+ipport = '192.168.111.128:8080'
 
 #美股现金
 app_account = 'aa@bb.com'
@@ -165,24 +165,24 @@ appid = '10000001'
 # 		'app_account':app_account,
 # 		'card':card,
 # 		'appid':appid,
-# 		'order_id':'odr_us_sht_trd_svc_51_20160507_100059_1',
+# 		'order_id':'odr_us_sht_trd_svc_51_20160510_100059_1',
 # 		'quantity':1000,
 # 		'price':80
 # 		}
 # 	)
 # print(r.text)
 
-#撤单
-r = requests.post(
-	"http://%s/api/v1/cancle_order" % ipport, 
-	json={
-		'app_account':app_account,
-		'card':card,
-		'appid':appid,
-		'order_id':'odr_us_sht_trd_svc_51_20160507_100059_6'
-		}
-	)
-print(r.text)
+# #撤单
+# r = requests.post(
+# 	"http://%s/api/v1/cancle_order" % ipport, 
+# 	json={
+# 		'app_account':app_account,
+# 		'card':card,
+# 		'appid':appid,
+# 		'order_id':'odr_us_sht_trd_svc_51_20160510_100059_1'
+# 		}
+# 	)
+# print(r.text)
 
 
 
