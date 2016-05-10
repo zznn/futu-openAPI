@@ -1,0 +1,15 @@
+mysql:
+  image: daocloud.io/zznn/mysql:latest
+  volumes:
+  - /home/zhulei/mydata:/var/lib/mysql
+  environment:
+  - MYSQL_ROOT_PASSWORD=123456
+myapp:
+  image: daocloud.io/zznn/flask:latest
+  command: ./script.sh
+  links:
+  - mysql:default
+  ports:
+  - 8888:8080
+  volumes:
+  - /home/zhulei/app:/app
