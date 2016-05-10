@@ -14,7 +14,6 @@ def gen_signature(header, body, url, method, app_secret, accesstoken):
 	
 	dic = sorted(sign.items(), key = lambda d:d[0]) 
 	params = method + '&' + urllib.parse.quote_plus(url)
-
 	for (key, value) in dic:
 		params += '&' + key + '=' + urllib.parse.quote_plus(str(value))
 	signkey = app_secret + '&' + accesstoken
