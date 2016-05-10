@@ -1,2 +1,2 @@
 # futu-openAPI
-富途证券第三方接入API
+富途证券开发平台API使用说明
