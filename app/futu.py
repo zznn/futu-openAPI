@@ -26,7 +26,6 @@ def check_type(request):
 		return request.text
 
 class client(object):
-	"""docstring for client"""
 	def __init__(self, app_account, card, appid):
 		super(client, self).__init__()
 		for item in config.sections():
