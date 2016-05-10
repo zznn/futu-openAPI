@@ -53,15 +53,15 @@ appid = '10000001'
 # print(r.text)
 
 
-# #获取账户信息
-# r = requests.post(
-# 	"http://%s/api/v1/account" % ipport, 
-# 	json={'app_account':app_account,
-# 		'card':card,
-# 		'appid':appid
-# 		}
-# 	)
-# print(r.text)
+#获取账户信息
+r = requests.post(
+	"http://%s/api/v1/account" % ipport, 
+	json={'app_account':app_account,
+		'card':card,
+		'appid':appid
+		}
+	)
+print(r.text)
 
 # #获取账户现金
 # r = requests.post(
