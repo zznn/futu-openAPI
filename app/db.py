@@ -6,6 +6,7 @@ import logging.config
 logging.config.fileConfig('./conf/logging.conf')
 db_logger = logging.getLogger()
 
+
 config = {
 	'host':'172.17.0.2',
 	'port':3306,
