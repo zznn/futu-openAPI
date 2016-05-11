@@ -1,0 +1,6 @@
+2016-05-11 07:32:49,968 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 07:32:49,970 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 07:32:50,292 - mainapp.py:80 - get_account_cash - INFO - SUCCESS
+2016-05-11 07:32:59,394 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 07:32:59,395 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 07:32:59,578 - mainapp.py:80 - get_account_cash - INFO - SUCCESS
