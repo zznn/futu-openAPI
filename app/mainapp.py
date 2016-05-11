@@ -11,7 +11,6 @@ app = Flask(__name__)
 
 logging.config.fileConfig('./conf/logging.conf')
 no_db_logger = logging.getLogger()
-# db_logger = logging.getLogger('db')
 
 def check_parameters(pjson):
 	if not pjson or not 'app_account' in pjson or not 'card' in pjson or not 'appid' in pjson:
@@ -35,13 +34,6 @@ def hello_world():
 	return 'hello 22222222 world!'
 
 
-
-# @app.route('/api/vi/granttoken', methods=['POST'])
-# def grant_token():
-# 	cc = check_parameters(request.json)
-# 	cc.grant_token()
-
-
 @app.route('/api/v1/tradetoken', methods=['POST'])
 def trade_token():
 	trade_pswd = request.json['trade_pswd']
@@ -57,7 +49,7 @@ def trade_token():
 		token = message['data']['trade_token']
 		save_update_token(account, appid, None, token, card, True)
 	return jsonify(**message)
-	# return jsonify({'trade_token':cc.get_trade_token(trade_pswd)})
+
 
 
 @app.route('/api/v1/account', methods=['POST'])
@@ -67,8 +59,6 @@ def get_account_detail():
 	logtext = log_handler(message, '获取账户信息')
 	no_db_logger.info(logtext)
 	return json.dumps(message, ensure_ascii=False)
-	# return jsonify(**message)
-	# return jsonify({'account_detail':cc.get_account_detail()})
 	
 
 
@@ -79,9 +69,6 @@ def get_account_cash():
 	logtext = log_handler(message, '获取账户现金')
 	no_db_logger.info(logtext)
 	return json.dumps(message, ensure_ascii=False)
-	# return jsonify(**message)
-	# return jsonify({'account_cash':cc.get_account_cash()})
-
 
 
 @app.route('/api/v1/account/portfolio', methods=['POST'])
@@ -91,8 +78,6 @@ def get_account_portfolio():
 	logtext = log_handler(message, '获取账户持仓')
 	no_db_logger.info(logtext)
 	return json.dumps(message, ensure_ascii=False)
-	# return jsonify(**message)
-	# return jsonify({'account_portfolio':cc.get_account_portfolio()})
 
 
 @app.route('/api/v1/get_list_orders', methods=['POST'])
@@ -104,8 +89,6 @@ def get_list_orders():
 	logtext = log_handler(message, '获取订单列表')
 	no_db_logger.info(logtext)
 	return json.dumps(message, ensure_ascii=False)
-	# return jsonify(**message)
-	# return jsonify({'list_orders':cc.get_list_orders(date_begin, date_end)})
 
 
 @app.route('/api/v1/get_list_trades', methods=['POST'])
@@ -115,8 +98,6 @@ def get_list_trades():
 	logtext = log_handler(message, '获取交易列表')
 	no_db_logger.info(logtext)
 	return json.dumps(message, ensure_ascii=False)
-	# return jsonify(**message)
-	# return jsonify({'list_trades':cc.get_list_trades()})
 
 
 @app.route('/api/v1/place_order', methods=['POST'])
@@ -131,8 +112,6 @@ def place_order():
 	logtext = log_handler(message, '下单')
 	no_db_logger.info(logtext)
 	return json.dumps(message, ensure_ascii=False)
-	# return jsonify(**message)
-	# return jsonify({'place_order':cc.place_order(code, quantity, price, side, ltype)})
 
 
 @app.route('/api/v1/change_order', methods=['POST'])
@@ -145,8 +124,6 @@ def change_order():
 	logtext = log_handler(message, '改单')
 	no_db_logger.info(logtext)
 	return json.dumps(message, ensure_ascii=False)
-	# return jsonify(**message)
-	# return jsonify({'changed_order':cc.change_order(order_id, quantity, price)})
 
 
 @app.route('/api/v1/cancle_order', methods=['POST'])
@@ -157,8 +134,6 @@ def cancle_order():
 	logtext = log_handler(message, '撤单')
 	no_db_logger.info(logtext)
 	return json.dumps(message, ensure_ascii=False)
-	# return jsonify(**message)
-	# return jsonify({'cancle_order':cc.cancle_order(order_id)})
 
 
 @app.route('/ap1/v1/save_token', methods=['POST'])
@@ -192,8 +167,5 @@ def delete_token():
 		return json.dumps({'DB_result':'token删除失败'}, ensure_ascii=False)
 	
 	
-
 if __name__ == '__main__':
-	#app.run(debug=True) 
- 	#app.run(host='0.0.0.0', port=4000)
 	app.run()
