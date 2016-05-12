@@ -2,13 +2,7 @@
 import pymysql.cursors
 import logging
 import logging.config
-#import subprocess as t
-#import configparser
 
-#config = configparser.ConfigParser()
-#config.read('./conf/db.conf')
-
-#print(ip)
 logging.config.fileConfig('./conf/logging.conf')
 db_logger = logging.getLogger()
 
