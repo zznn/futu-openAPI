@@ -4,3 +4,57 @@
 2016-05-11 07:32:59,394 - db.py:43 - get_token - INFO - accesstoken SUCCESS
 2016-05-11 07:32:59,395 - db.py:43 - get_token - INFO - tradetoken SUCCESS
 2016-05-11 07:32:59,578 - mainapp.py:80 - get_account_cash - INFO - SUCCESS
+2016-05-11 15:56:32,961 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 15:56:32,963 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 15:56:33,185 - mainapp.py:68 - get_account_detail - INFO - SUCCESS
+2016-05-11 15:56:51,710 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 15:56:51,712 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 15:56:52,071 - mainapp.py:68 - get_account_detail - INFO - SUCCESS
+2016-05-11 16:17:46,475 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 16:17:46,477 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 16:17:47,725 - mainapp.py:68 - get_account_detail - INFO - SUCCESS
+2016-05-11 16:17:49,493 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 16:17:49,494 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 16:17:49,690 - mainapp.py:68 - get_account_detail - INFO - SUCCESS
+2016-05-11 16:18:29,560 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 16:18:29,561 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 16:18:29,885 - mainapp.py:80 - get_account_cash - INFO - SUCCESS
+2016-05-11 16:18:33,576 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 16:18:33,577 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 16:18:33,751 - mainapp.py:80 - get_account_cash - INFO - SUCCESS
+2016-05-11 16:54:57,543 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 16:54:57,545 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 16:54:57,819 - mainapp.py:80 - get_account_cash - INFO - SUCCESS
+2016-05-11 16:55:10,248 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 16:55:10,249 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 16:55:10,569 - mainapp.py:92 - get_account_portfolio - INFO - SUCCESS
+2016-05-11 16:55:14,422 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 16:55:14,423 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 16:55:14,603 - mainapp.py:92 - get_account_portfolio - INFO - SUCCESS
+2016-05-11 16:55:19,911 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 16:55:19,913 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 16:55:20,296 - mainapp.py:92 - get_account_portfolio - INFO - SUCCESS
+2016-05-11 16:58:15,894 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 16:58:15,896 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 16:58:16,104 - mainapp.py:92 - get_account_portfolio - INFO - SUCCESS
+2016-05-11 16:58:31,651 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 16:58:31,653 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 16:58:31,933 - mainapp.py:105 - get_list_orders - INFO - SUCCESS
+2016-05-11 17:20:31,935 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 17:20:31,937 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 17:20:32,186 - mainapp.py:68 - get_account_detail - INFO - SUCCESS
+2016-05-11 17:20:34,544 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 17:20:34,545 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 17:20:34,724 - mainapp.py:68 - get_account_detail - INFO - SUCCESS
+2016-05-11 09:42:20,555 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 09:42:20,557 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 09:42:20,899 - mainapp.py:68 - get_account_detail - INFO - SUCCESS
+2016-05-11 09:42:26,243 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 09:42:26,244 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 09:42:26,525 - mainapp.py:68 - get_account_detail - INFO - SUCCESS
+2016-05-11 17:43:47,848 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 17:43:47,850 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 17:43:48,073 - mainapp.py:68 - get_account_detail - INFO - SUCCESS
+2016-05-11 17:43:48,993 - db.py:43 - get_token - INFO - accesstoken SUCCESS
+2016-05-11 17:43:48,995 - db.py:43 - get_token - INFO - tradetoken SUCCESS
+2016-05-11 17:43:49,218 - mainapp.py:68 - get_account_detail - INFO - SUCCESS

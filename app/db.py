@@ -2,14 +2,19 @@
 import pymysql.cursors
 import logging
 import logging.config
-import subprocess as t
+#import subprocess as t
+#import configparser
 
+#config = configparser.ConfigParser()
+#config.read('./conf/db.conf')
+
+#print(ip)
 logging.config.fileConfig('./conf/logging.conf')
 db_logger = logging.getLogger()
-ip = t.getoutput("cat /etc/hosts | grep mysql |awk '{print $1}'")
+
 
 config = {
-	'host':ip,
+	'host':'172.17.0.2',
 	'port':3306,
 	'user':'root',
 	'password':'123456',
