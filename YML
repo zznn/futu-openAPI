@@ -13,3 +13,4 @@ myapp:
   - 8888:8080
   volumes:
   - /home/zhulei/app:/app
+  - /etc/localtime:/etc/localtime
