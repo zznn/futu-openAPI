@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from flask import Flask, jsonify, request, abort, make_response
-from futu import *
+from futu_server_api import *
 from db import save_update_token
 from db import delete_tokens
 import logging

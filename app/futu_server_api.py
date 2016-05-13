@@ -15,7 +15,7 @@ import requests
 import configparser
 
 config = configparser.ConfigParser()
-config.read('./conf/default.conf')
+config.read('./conf/Appidconf.ini')
 
 def check_type(request):
 	if isinstance(request, dict):
