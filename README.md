@@ -1,2 +1,2 @@
-# futu-openAPI
-富途证券开发平台API使用说明
+- 富途开放平台第三方使用文档，见 [futu-openapi-instructions.md](./futu-openapi-instructions.md)
+- 富途开放平台第三方接口（API）说明文档，见[futu-openapi-api.md](./futu-openapi-api.md)
