@@ -45,16 +45,14 @@ http://127.0.0.1:8888/api/v1/save_token
     "app_account":"aa@bb.com",
     "card":"1001100200100059",
     "appid":"10000001",		
-	"market":"us",
+	"market":"US",
  	"token":"rxu6CEYMSBrB6zSyOKjjk8j-17wRYw0qANky1xHuXPMpqUSVQaUotoBK1LV7OhMR",
  	"text":"美股现金账户"
 }
 ```
 
 ####返回数据（JSON格式）
-| 参数       | 类型   |  描述  |
-| --------   | :-----: | :----:  |
-| DB_result   | string |   保存是否成功     |
+空
 ####返回数据示例
 成功：
 ```python
@@ -97,9 +95,7 @@ http://127.0.0.1:8888/api/v1/delete_token
 ```
 
 ####返回数据（JSON格式）
-| 参数       | 类型   |  描述  |
-| --------   | :-----: | :----:  |
-| DB_result   | string |   删除是否成功     |
+空
 ####返回数据示例
 成功：
 ```python
