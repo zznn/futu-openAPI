@@ -25,8 +25,8 @@ author: july
 -  │   ├── client.cer                 
 -  │   └── client.key                 
 -  ├── conf
--  │   ├── Appidconf.ini
--  │   └── logging.conf
+-  │   ├── appinfo.ini
+-  │   └── log.ini
 -  ├── db.py
 -  ├── futu_server_api.py
 -  ├── log
@@ -49,9 +49,9 @@ author: july
  
   
 ## <a name='appid-config'></a>配置自己的Appid
-####首先请在CA文件夹中存放生成的证书及私钥，并在conf文件夹中按照如下说明配置Appidconf.ini文件。 
-####Appidconf.ini配置说明
-####多个APP请按照如下格式配置在Appidconf.ini文件中,请确保配置文件中的证书名与实际证书名一致：
+####首先请在CA文件夹中存放生成的证书及私钥，并在conf文件夹中按照如下说明配置appinfo.ini文件。 
+####appinfo.ini配置说明
+####多个APP请按照如下格式配置在appinfo.ini文件中,请确保配置文件中的证书名与实际证书名一致：
 
 - [app_id]为富途分配的第三方应用ID
 - app_secret为富途分配的第三方签名密钥
@@ -96,7 +96,7 @@ author: july
     
 ####Step3 运行Docker容器（请依照YML文件说明修改相关路径）
     sudo docker run -v /home/zhulei/mydata/:/var/lib/mysql --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d registry.aliyuncs.com/futu_openapi/mysql
-    sudo docker run -d --name web -v /home/zhulei/app/:/app -v /etc/localtime:/etc/localtime -p 8080:8080 --link mysql:db registry.aliyuncs.com/futu_openapi/flask ./script.sh
+    sudo docker run -d --name web -v /home/zhulei/app/:/app -v /etc/localtime:/etc/localtime -p 8080:8080 --link mysql:futudb registry.aliyuncs.com/futu_openapi/flask ./script.sh
 
 
 ## <a name='api'></a>参考API说明文档
