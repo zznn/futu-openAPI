@@ -3,15 +3,17 @@ import requests
 # ipport = '127.0.0.1:5000'
 ipport = '192.168.111.128:8080'
 
-#美股现金
-app_account = 'aa@bb.com'
-card = '1001100200100059'
-appid = '10000001'
-
-# #港股保证金账户
+# #美股现金
 # app_account = 'aa@bb.com'
-# card = '1001100100100059'
+# card = '1001100200100059'
 # appid = '10000001'
+#rxu6CEYMSBrB6zSyOKjjk8j-17wRYw0qANky1xHuXPMpqUSVQaUotoBK1LV7OhMR
+
+#港股保证金账户
+app_account = 'aa@bb.com'
+card = '1001100100100059'
+appid = '10000001'
+# YHTNALMOm6IqkKsoOmxwLJ9O_LK8CGJE65rPNEbjA8HOMoAPdTsfk82HauR1Rl5s
 
 # #港股现金账户
 # app_account = 'aa@bb.com'
@@ -23,25 +25,25 @@ appid = '10000001'
 # 	"http://%s/ap1/v1/save_token" % ipport, 
 # 	json={'app_account':app_account,
 # 		'appid':appid,
-# 		'market':'us',
-# 		'token':'rxu6CEYMSBrB6zSyOKjjk8j-17wRYw0qANky1xHuXPMpqUSVQaUotoBK1LV7OhMR',
+# 		'market':'HK',
+# 		'token':'YHTNALMOm6IqkKsoOmxwLJ9O_LK8CGJE65rPNEbjA8HOMoAPdTsfk82HauR1Rl5s',
 # 		'card':card,
-# 		'text':'美股现金账户'
+# 		'text':'港股保证金账户'
 # 		}
 # 	)
 # print(r.text)
 
-#获取交易密码
-r = requests.post(
-	"http://%s/api/v1/tradetoken" % ipport, 
-	json={
-		'app_account':app_account,
-		'card':card,
-		'appid':appid,
-		'trade_pswd':'asdasd'
-		}
-	)
-print(r.text)
+# #获取交易密码
+# r = requests.post(
+# 	"http://%s/api/v1/tradetoken" % ipport, 
+# 	json={
+# 		'app_account':app_account,
+# 		'card':card,
+# 		'appid':appid,
+# 		'trade_pswd':'asdasd'
+# 		}
+# 	)
+# print(r.text)
 
 # #删除token
 # r = requests.post(
@@ -52,14 +54,14 @@ print(r.text)
 # 	)
 # print(r.text)
 
-# #获取卡号
-# r = requests.post(
-# 	"http://%s/api/v1/list_card" % ipport, 
-# 	json={'app_account':app_account,
-# 		'appid':appid,
-# 		}
-# 	)
-# print(r.text)
+#获取卡号
+r = requests.post(
+	"http://%s/api/v1/list_card" % ipport, 
+	json={'app_account':app_account,
+		'appid':appid,
+		}
+	)
+print(r.text)
 
 
 # #获取账户信息
