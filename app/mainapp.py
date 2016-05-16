@@ -174,7 +174,7 @@ def list_card():
 	cards = list_cards(account, appid)
 	if isinstance(cards, list):
 		no_db_logger.info('list cards success')
-		return json.dumps(P{'result_code':0,'error_msg':'','cards':cards}, ensure_ascii=False)
+		return json.dumps({'result_code':0,'error_msg':'','cards':cards}, ensure_ascii=False)
 	else:
 		no_db_logger.info('list cards fail')
 		return json.dumps({'result_code':1,'error_msg':'查询账户卡号失败'}, ensure_ascii=False)
