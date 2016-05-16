@@ -3,7 +3,7 @@ import pymysql.cursors
 import logging
 import logging.config
 
-logging.config.fileConfig('./conf/logging.conf')
+logging.config.fileConfig('./conf/log.ini')
 db_logger = logging.getLogger()
 
 
