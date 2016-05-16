@@ -45,7 +45,6 @@ author: july
 -  mainapp.py主程序
 -  myutility工具类程序
 -  script.sh程序启动脚本
--  test.py测试用例
  
   
 ## <a name='appid-config'></a>配置自己的Appid
