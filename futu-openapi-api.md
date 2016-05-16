@@ -9,6 +9,7 @@ author: july
     - [save_token 保存令牌](#save_token)
     - [delete_token 删除令牌](#delete_token)
     - [trade_token 交易令牌](#trade_token)
+    - [list_card 查询账户卡号](#list_card)
 - [Accounts API 账户接口](#accounts_api)
     - [get_account_detail 获取账户详情](#get_account_detail)
     - [get_account_cash 获取账户现金数据](#get_account_cash)
@@ -162,6 +163,63 @@ http://127.0.0.1:8888/api/v1/tradetoken
     "error_msg":"didn't get tradetoken" 
 }
 ```
+
+###<a name='list_card'></a>list_card
+####功能说明
+查询同一应用帐号对应的所有卡号，所属市场及其他描述
+####URL
+http://127.0.0.1:8888/api/v1/list_card
+####POST请求参数（JSON格式）
+| 参数       | 类型   |  描述  |
+| --------   | :-----: | :----:  |
+| app_account    | string |   第三方帐号     |
+| appid     | string |  富途分配的第三方应用ID  |
+####请求参数示例
+```python
+{
+    "app_account":"aa@bb.com",
+    "appid":"10000001"
+}
+```
+####返回数据（JSON格式）
+| 参数       | 类型   |  描述  |
+| --------   | :-----: | :----:  |
+| trade_token | CardInformation|  账户卡号描述，CardInformation数据类型见后面说明   |
+####返回数据示例
+成功：
+```python
+{
+    "result_code": 0,
+    "error_msg": "",
+    "data": {
+        "cards": [
+             {
+             	"card":"1001100200100059",
+             	"card_info":"美股现金账户",
+             	"market":"US"
+             },
+             {
+             	"card":"1001100100100059",
+             	"card_info":"港股保证金账户",
+             	"market":"HK"
+             },
+             {
+             	"card":"1001100120012143",
+             	"card_info":"港股现金账户",
+             	"market":"HK"
+             }
+        ]
+    }
+}
+```
+失败：
+```python
+{
+    "result_code": 1,
+    "error_msg": "查询账户卡号失败"
+}
+```
+
 
 ## <a name='accounts_api'></a>Accounts API 账户接口
 
@@ -795,3 +853,25 @@ http://127.0.0.1:8888/api/v1/cancle_order
         "id": 16,
         "side_text": "卖"
     }
+
+##### <a name='card'></a>成交 Trade
+
+说明：表示一个账户对应的所有卡号。
+
+字段：
+
+| 名称 | 意义 |
+| ---- | ---- |
+| card |  牛牛账户中相应的卡号，例如港股现金卡号，保证金卡号|
+| card_info | 牛牛账户中卡号的描述 |
+| market | 所属市场。可能值：HK(港股市场)，US(美股市场) |
+
+
+例如：
+
+    {
+        "card":"1001100200100059",
+        "card_info":"美股现金账户",
+        "market":"US"
+    }
+
