@@ -8,7 +8,7 @@ myapp:
   image: daocloud.io/zznn/flask:latest
   command: ./script.sh
   links:
-  - mysql:default
+  - mysql:futudb
   ports:
   - 8888:8080
   volumes:
