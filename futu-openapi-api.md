@@ -854,7 +854,7 @@ http://127.0.0.1:8888/api/v1/cancle_order
         "side_text": "卖"
     }
 
-##### <a name='card'></a>成交 Trade
+##### <a name='card'></a>卡号 Cards
 
 说明：表示一个账户对应的所有卡号。
 
