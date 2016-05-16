@@ -29,7 +29,7 @@ author: july
 ####功能说明
 将accesstoken保存到数据库，并与账户及卡号绑定
 ####URL
-http://127.0.0.1:8888/ap1/v1/save_token
+http://127.0.0.1:8888/api/v1/save_token
 ####POST请求参数（JSON格式）
 | 参数       | 类型   |  描述  |
 | --------   | :-----: | :----:  |
@@ -38,7 +38,7 @@ http://127.0.0.1:8888/ap1/v1/save_token
 | card       | string |  牛牛账户中相应的卡号，例如港股现金卡号，保证金卡号  |
 | text       | string |     牛牛账户中卡号的描述 |
 | appid     | string |  富途分配的第三方应用ID  |
-| market    | string |      股票市场         |
+| market    | string |      所属市场。可能值：HK(港股市场)，US(美股市场)        |
 ####请求参数示例
 ```python
 {
@@ -59,19 +59,22 @@ http://127.0.0.1:8888/ap1/v1/save_token
 成功：
 ```python
 {
-    "DB_result":"token删除成功" 
+    "result_code":0,
+    "error_msg":""
 }
 ```
 失败：
 ```python
 {
-    "DB_result":"token保存失败"
+    "result_code":1,
+    "error_msg":"token保存失败"
 }
 ```
 **备注：若未save_token而直接调用其他接口(除了delete_token)，将返回如下信息**
 ```python
 {
-    "ClientWarning":"didn't get accesstoken" 
+    "result_code":2,
+    "error_msg":"didn't get accesstoken" 
 }
 ```
 
@@ -79,7 +82,7 @@ http://127.0.0.1:8888/ap1/v1/save_token
 ####功能说明
 从数据库中删除账户及关联的令牌
 ####URL
-http://127.0.0.1:8888/ap1/v1/delete_token
+http://127.0.0.1:8888/api/v1/delete_token
 ####POST请求参数（JSON格式）
 | 参数       | 类型   |  描述  |
 | --------   | :-----: | :----:  |
@@ -101,13 +104,15 @@ http://127.0.0.1:8888/ap1/v1/delete_token
 成功：
 ```python
 {
-    "DB_result":"token删除成功" 
+    "result_code":0,
+    "error_msg":""
 }
 ```
 失败：
 ```python
 {
-    "DB_result":"token删除失败" 
+    "result_code":1,
+    "error_msg":"token删除失败" 
 }
 ```
 
@@ -115,7 +120,7 @@ http://127.0.0.1:8888/ap1/v1/delete_token
 ####功能说明
 验证交易密码，获取tradetoken
 ####URL
-http://127.0.0.1:8888/ap1/v1/tradetoken
+http://127.0.0.1:8888/api/v1/tradetoken
 ####POST请求参数（JSON格式）
 | 参数       | 类型   |  描述  |
 | --------   | :-----: | :----:  |
@@ -157,7 +162,8 @@ http://127.0.0.1:8888/ap1/v1/tradetoken
 **备注：若未获得tradetoken而直接调用3种交易接口，将返回如下信息**
 ```python
 {
-    "ClientWarning":"didn't get tradetoken" 
+    "result_code":2,
+    "error_msg":"didn't get tradetoken" 
 }
 ```
 
@@ -173,7 +179,7 @@ http://127.0.0.1:8888/ap1/v1/tradetoken
 ####功能说明
 获取当前账户详情，如账户类型、状态、所属市场
 ####URL
-http://127.0.0.1:8888/ap1/v1/account
+http://127.0.0.1:8888/api/v1/account
 ####POST请求参数（JSON格式）
 | 参数       | 类型   |  描述  |
 | --------   | :-----: | :----:  |
@@ -213,7 +219,7 @@ http://127.0.0.1:8888/ap1/v1/account
 ####功能说明
 获取当前账户现金数据
 ####URL
-http://127.0.0.1:8888/ap1/v1/account/cash
+http://127.0.0.1:8888/api/v1/account/cash
 ####POST请求参数（JSON格式）
 | 参数       | 类型   |  描述  |
 | --------   | :-----: | :----:  |
@@ -266,7 +272,7 @@ http://127.0.0.1:8888/ap1/v1/account/cash
 ####功能说明
 获取当前账户股票持仓数据
 ####URL
-http://127.0.0.1:8888/ap1/v1/account/portfolio
+http://127.0.0.1:8888/api/v1/account/portfolio
 ####POST请求参数（JSON格式）
 | 参数       | 类型   |  描述  |
 | --------   | :-----: | :----:  |
@@ -343,7 +349,7 @@ http://127.0.0.1:8888/ap1/v1/account/portfolio
 ####功能说明
 获取当前用户当前账户订单数据
 ####URL
-http://127.0.0.1:8888/ap1/v1/get_list_orders
+http://127.0.0.1:8888/api/v1/get_list_orders
 ####POST请求参数（JSON格式）
 | 参数       | 类型   |  描述  |   必填 | 
 | --------   | :-----: | :----:  |:----:  |
@@ -422,7 +428,7 @@ http://127.0.0.1:8888/ap1/v1/get_list_orders
 ####功能说明
 获取账户今日成交列表，一个订单可能会对应多个成交。成交可能没有对应的订单，比如线下的成交
 ####URL
-http://127.0.0.1:8888/ap1/v1/get_list_trades
+http://127.0.0.1:8888/api/v1/get_list_trades
 ####POST请求参数（JSON格式）
 | 参数       | 类型   |  描述  |  
 | --------   | :-----: | :----:  |:----:  |
@@ -478,7 +484,7 @@ http://127.0.0.1:8888/ap1/v1/get_list_trades
 ####功能说明
 在当前账户下订单
 ####URL
-http://127.0.0.1:8888/ap1/v1/place_order
+http://127.0.0.1:8888/api/v1/place_order
 ####POST请求参数（JSON格式）
 | 参数       | 类型   |  描述  |  备注 |
 | --------   | :-----: | :----:  |:----:  |
@@ -522,7 +528,7 @@ http://127.0.0.1:8888/ap1/v1/place_order
 ####功能说明
 对还没成交的订单做修改，仅可修改订单数量和价格
 ####URL
-http://127.0.0.1:8888/ap1/v1/change_order
+http://127.0.0.1:8888/api/v1/change_order
 ####POST请求参数（JSON格式）
 | 参数       | 类型   |  描述  | 
 | --------   | :-----: | :----:  |:----:  |
@@ -565,7 +571,7 @@ http://127.0.0.1:8888/ap1/v1/change_order
 ####功能说明
 对还没成交的订单撤单
 ####URL
-http://127.0.0.1:8888/ap1/v1/cancle_order
+http://127.0.0.1:8888/api/v1/cancle_order
 ####POST请求参数（JSON格式）
 | 参数       | 类型   |  描述  | 
 | --------   | :-----: | :----:  |:----:  |
