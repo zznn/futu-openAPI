@@ -2,7 +2,7 @@
 
 ostr=`cat db.py | grep 'host' |awk -F "'" '{print $4}'`
 
-var=`cat /etc/hosts | grep mysql | awk '{print $1}'`
+var=`cat /etc/hosts | grep 'futudb' | awk '{print $1}'`
 
 sed -i "s/${ostr}/${var}/g" db.py
 
