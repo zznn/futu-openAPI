@@ -172,9 +172,10 @@ def list_card():
 	appid = request.json['appid']
 	account = request.json['app_account']
 	cards = list_cards(account, appid)
+	message = dict(cards=cards)
 	if isinstance(cards, list):
 		no_db_logger.info('list cards success')
-		return json.dumps({'result_code':0,'error_msg':'','cards':cards}, ensure_ascii=False)
+		return json.dumps({'result_code':0,'error_msg':'','data':message}, ensure_ascii=False)
 	else:
 		no_db_logger.info('list cards fail')
 		return json.dumps({'result_code':1,'error_msg':'查询账户卡号失败'}, ensure_ascii=False)
