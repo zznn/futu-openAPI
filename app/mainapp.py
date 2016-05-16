@@ -147,10 +147,10 @@ def save_token():
 	DB_result = save_update_token(account, appid, market, token, card, False, card_desc)
 	if DB_result == 'success':
 		no_db_logger.info('token save success')
-		return json.dumps({'DB_result':'token保存成功'}, ensure_ascii=False)
+		return json.dumps({'result_code':0,'error_msg':''}, ensure_ascii=False)
 	else:
 		no_db_logger.info('token save fail')
-		return json.dumps({'DB_result':'token保存失败'}, ensure_ascii=False)
+		return json.dumps({'result_code':1,'error_msg':'token保存失败'}, ensure_ascii=False)
 	
 
 
@@ -161,10 +161,10 @@ def delete_token():
 	DB_result = delete_tokens(account, appid)
 	if DB_result == 'success':
 		no_db_logger.info('token delete success')
-		return json.dumps({'DB_result':'token删除成功'}, ensure_ascii=False)
+		return json.dumps({'result_code':0,'error_msg':''}, ensure_ascii=False)
 	else:
 		no_db_logger.info('token delete fail')
-		return json.dumps({'DB_result':'token删除失败'}, ensure_ascii=False)
+		return json.dumps({'result_code':1,'error_msg':'token删除失败'}, ensure_ascii=False)
 	
 	
 if __name__ == '__main__':
