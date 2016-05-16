@@ -143,7 +143,7 @@ http://127.0.0.1:8888/ap1/v1/tradetoken
     "result_code": 0,
     "error_msg": "",
     "data": {
-        "trade_token": "Ij0UYMooWbBqvyNllTXAysfA1KOutFbzQLwCmUK2GiAaOUmlFWEH_Cg_uf7pHwhgOcf0-MLSurDZ                         goL4F73gxg=="
+        "trade_token": "Ij0UYMooWbBqvyNllTXAysfA1KOutFbzQLwCmUK2GiAaOUmlFWEH_Cg_uf7pHwhgOcf0-MLSurDZgoL4F73gxg=="
     }
 }
 ```
