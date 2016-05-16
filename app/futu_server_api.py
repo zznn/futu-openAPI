@@ -15,7 +15,7 @@ import requests
 import configparser
 
 config = configparser.ConfigParser()
-config.read('./conf/Appidconf.ini')
+config.read('./conf/appinfo.ini')
 
 def check_type(request):
 	if isinstance(request, dict):
@@ -46,7 +46,7 @@ class client(object):
 		isTrade字段用于判断是否携带交易授权令牌
 		'''
 		if not self._token:
-			return {'ClientWarning':'didn\'t get accesstoken'}
+			return {'result_code':2, 'error_msg':'didn\'t get accesstoken'}
 
 		myheaders = {
 			'Accept':'application/vnd.futu5.openapi-v1+json',
@@ -65,7 +65,7 @@ class client(object):
 			if self._tradetoken:
 				myheaders['X-Futu-Oauth-Tradetoken'] = self._tradetoken
 			else:
-				return {'ClientWarning':'didn\'t get tradetoken'}
+				return {'result_code':2, 'error_msg':'didn\'t get tradetoken'}
 			
 		sigheaders = {
 			'X-Futu-Oauth-Appid':myheaders['X-Futu-Oauth-Appid'],
@@ -90,7 +90,7 @@ class client(object):
 		GET请求，获取数据
 		'''
 		headers = self.gen_headers(False, data, url, 'GET', lang)
-		if 'ClientWarning' in headers:
+		if 'error_msg' in headers:
 			return headers
 		else:
 			return requests.get(url, params = data, headers = headers, cert = self._cert)
@@ -100,7 +100,7 @@ class client(object):
 		POST请求，修改数据
 		'''
 		headers = self.gen_headers(True, data, url, 'POST')
-		if 'ClientWarning' in headers:
+		if 'error_msg' in headers:
 			return headers
 		else:
 			return requests.post(url, data = json.dumps(data), headers = headers, cert = self._cert)
@@ -111,7 +111,7 @@ class client(object):
 		PUT请求是幂等的，重复执行多次，效果一样
 		'''
 		headers = self.gen_headers(True, data, url, 'PUT')
-		if 'ClientWarning' in headers:
+		if 'error_msg' in headers:
 			return headers
 		else:
 			return requests.put(url, data = json.dumps(data), headers = headers, cert = self._cert)
@@ -126,7 +126,7 @@ class client(object):
 			}
 		url = 'https://sandbox-openapi.futu5.com/auth_trade_pswd'
 		headers = self.gen_headers(False, data, url, 'POST')
-		if 'ClientWarning' in headers:
+		if 'error_msg' in headers:
 			return headers
 		req = requests.post(url,
 				 data = json.dumps(data),
