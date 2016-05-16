@@ -1,7 +1,7 @@
 import requests
 
-ipport = '127.0.0.1:5000'
-#ipport = '192.168.111.128:4000'
+# ipport = '127.0.0.1:5000'
+ipport = '192.168.111.128:8080'
 
 #美股现金
 app_account = 'aa@bb.com'
@@ -31,21 +31,30 @@ appid = '10000001'
 # 	)
 # print(r.text)
 
-# #获取交易密码
-# r = requests.post(
-# 	"http://%s/api/v1/tradetoken" % ipport, 
-# 	json={
-# 		'app_account':app_account,
-# 		'card':card,
-# 		'appid':appid,
-# 		'trade_pswd':'asdasd'
-# 		}
-# 	)
-# print(r.text)
+#获取交易密码
+r = requests.post(
+	"http://%s/api/v1/tradetoken" % ipport, 
+	json={
+		'app_account':app_account,
+		'card':card,
+		'appid':appid,
+		'trade_pswd':'asdasd'
+		}
+	)
+print(r.text)
 
 # #删除token
 # r = requests.post(
 # 	"http://%s/api/v1/delete_token" % ipport, 
+# 	json={'app_account':app_account,
+# 		'appid':appid,
+# 		}
+# 	)
+# print(r.text)
+
+# #获取卡号
+# r = requests.post(
+# 	"http://%s/api/v1/list_card" % ipport, 
 # 	json={'app_account':app_account,
 # 		'appid':appid,
 # 		}
@@ -172,17 +181,17 @@ appid = '10000001'
 # 	)
 # print(r.text)
 
-#撤单
-r = requests.post(
-	"http://%s/api/v1/cancle_order" % ipport, 
-	json={
-		'app_account':app_account,
-		'card':card,
-		'appid':appid,
-		'order_id':'odr_us_sht_trd_svc_51_20160507_100059_6'
-		}
-	)
-print(r.text)
+# #撤单
+# r = requests.post(
+# 	"http://%s/api/v1/cancle_order" % ipport, 
+# 	json={
+# 		'app_account':app_account,
+# 		'card':card,
+# 		'appid':appid,
+# 		'order_id':'odr_us_sht_trd_svc_51_20160507_100059_6'
+# 		}
+# 	)
+# print(r.text)
 
 
 

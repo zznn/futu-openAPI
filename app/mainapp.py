@@ -43,7 +43,7 @@ def trade_token():
 	appid = request.json['appid']
 	cc = check_parameters(request.json)
 	message = cc.get_trade_token(trade_pswd)
-	if message['result_code'] != 0 and message['error_msg' == 'didn\'t get accesstoken']:
+	if message['result_code'] != 0 and message['error_msg'] == 'didn\'t get accesstoken':
 		no_db_logger.info('didn\'t get accesstoken')
 		return json.dumps({'result_code':2,'error_msg':'didn\'t get accesstoken'}, ensure_ascii=False)
 	if message['result_code'] == 0:
