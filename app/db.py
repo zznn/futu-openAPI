@@ -111,5 +111,33 @@ def delete_tokens(account, appid):
 		return 'failure'
 	finally:
 		connection.close()
+
+def list_cards(account, appid):
+	cards = []
+	try:
+		connection.ping()
+	except Exception as e:	
+		connection = pymysql.connect(**config)
+	finally:
+		pass
+
+	try:
+		with connection.cursor() as cursor:
+			sql = 'select card, card_infor, market from account_token where account = %s and appid = %s'
+			cursor.execute(sql, (account, appid))
+			result = cursor.fetchall()
+			if len(result) != 0:
+				for i in range(len(result)):
+					data = {'card':result[i][0],'card_infor':result[i][1],'market':result[i][2]}
+					cards.insert(i,data)
+		db_logger.info('list cards SUCCESS')
+		connection.commit()
+		return cards
+	except Exception as e:
+		connection.rollback()
+		db_logger.error('list cards FAIL，following as:%s' % str(e), exc_info = True)
+		return 'failure'
+	finally:
+		connection.close()
 	
 	

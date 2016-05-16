@@ -3,6 +3,7 @@ from flask import Flask, jsonify, request, abort, make_response
 from futu_server_api import *
 from db import save_update_token
 from db import delete_tokens
+from db import list_cards
 import logging
 import logging.config
 import json
@@ -165,6 +166,19 @@ def delete_token():
 	else:
 		no_db_logger.info('token delete fail')
 		return json.dumps({'result_code':1,'error_msg':'token删除失败'}, ensure_ascii=False)
+
+@app.route('/api/v1/list_card', methods=['POST'])
+def list_card():
+	appid = request.json['appid']
+	account = request.json['app_account']
+	cards = list_cards(account, appid)
+	if isinstance(cards, list):
+		no_db_logger.info('list cards success')
+		return json.dumps(P{'result_code':0,'error_msg':'','cards':cards}, ensure_ascii=False)
+	else:
+		no_db_logger.info('list cards fail')
+		return json.dumps({'result_code':1,'error_msg':'查询账户卡号失败'}, ensure_ascii=False)
+
 	
 	
 if __name__ == '__main__':
