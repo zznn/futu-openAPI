@@ -124,7 +124,7 @@ class client(object):
 		data = {
 				'trade_pswd':trade_pswd
 			}
-		url = 'https://sandbox-openapi.futu5.com/auth_trade_pswd'
+		url = 'https://openapi.futu5.com/auth_trade_pswd'
 		headers = self.gen_headers(False, data, url, 'POST')
 		if 'error_msg' in headers:
 			return headers
@@ -139,7 +139,7 @@ class client(object):
 		'''
 		获取账户详情
 		'''
-		req = self.get('https://sandbox-tradeopen.futu5.com/account')
+		req = self.get('https://tradeopen.futu5.com/account')
 		return check_type(req)
 
 
@@ -147,7 +147,7 @@ class client(object):
 		'''
 		获取现金数据
 		'''
-		req = self.get('https://sandbox-tradeopen.futu5.com/account/cash')
+		req = self.get('https://tradeopen.futu5.com/account/cash')
 		return check_type(req)
 
 
@@ -155,7 +155,7 @@ class client(object):
 		'''
 		获取当前账户股票持仓数据
 		'''
-		req = self.get('https://sandbox-tradeopen.futu5.com/account/portfolio')
+		req = self.get('https://tradeopen.futu5.com/account/portfolio')
 		return check_type(req)
 
 
@@ -164,7 +164,7 @@ class client(object):
 		获取订单数据
 		datetime.now().date().strftime('%Y%m%d')
 		'''
-		url = 'https://sandbox-tradeopen.futu5.com/orders?date_begin={0}&date_end={1}'.format(date_begin, date_end)
+		url = 'https://tradeopen.futu5.com/orders?date_begin={0}&date_end={1}'.format(date_begin, date_end)
 
 		req = self.get(
 			url,
@@ -177,7 +177,7 @@ class client(object):
 		'''
 		获取账户今日成交列表
 		'''
-		req =  self.get('https://sandbox-tradeopen.futu5.com/trades')
+		req =  self.get('https://tradeopen.futu5.com/trades')
 		return check_type(req)
 
 
@@ -186,7 +186,7 @@ class client(object):
 		下订单
 		'''
 		req = self.post(
-			'https://sandbox-tradeopen.futu5.com/orders',
+			'https://tradeopen.futu5.com/orders',
 		 	{
 				'code':code, 
 				'quantity':quantity, 
@@ -202,7 +202,7 @@ class client(object):
 		'''
 		修改订单
 		'''
-		url = 'https://sandbox-tradeopen.futu5.com/orders/' + str(order_id)
+		url = 'https://tradeopen.futu5.com/orders/' + str(order_id)
 		req = self.put(
 			url,
 			{
@@ -217,7 +217,7 @@ class client(object):
 		'''
 		取消订单，对还没有成交的订单撤单
 		'''
-		url = 'https://sandbox-tradeopen.futu5.com/orders/' + str(order_id)
+		url = 'https://tradeopen.futu5.com/orders/' + str(order_id)
 		req = self.put(
 			url,
 			{

@@ -1,7 +1,7 @@
 import requests
 
 # ipport = '127.0.0.1:5000'
-ipport = '192.168.111.128:8080'
+ipport = '192.168.111.128:8888'
 
 # #美股现金
 # app_account = 'aa@bb.com'
