@@ -86,16 +86,16 @@ author: july
 ####耐心等待一会，见到如下图所示的“创建成功”即部署成功；
 ![](https://raw.githubusercontent.com/zznn/zhulei-github/master/mytu3.png)
 ### <a name='Aliyun'></a>服务器不支持外部连接
-####Step1 根据主机系统安装Docker（自行参考Docker官方文档）
+####Step1 根据主机系统安装Docker（自行参考Docker官方文档或此链接https://segmentfault.com/a/1190000002485231）
 
 ####Step2 登录阿里云获取Docker镜像（密码是futu@123456）
-    sudo docker login --username=富途证券开放平台 registry.aliyuncs.com
-    sudo docker pull registry.aliyuncs.com/futu_openapi/mysql
-    sudo docker pull registry.aliyuncs.com/futu_openapi/flask
+    sudo docker login --username=富途开放平台 registry.aliyuncs.com
+    sudo docker pull registry.aliyuncs.com/futu_open/mysql
+    sudo docker pull registry.aliyuncs.com/futu_open/flask
     
 ####Step3 运行Docker容器（请依照YML文件说明修改相关路径）
-    sudo docker run -v /home/zhulei/mydata/:/var/lib/mysql --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d registry.aliyuncs.com/futu_openapi/mysql
-    sudo docker run -d --name web -v /home/zhulei/app/:/app -v /etc/localtime:/etc/localtime -p 8080:8080 --link mysql:futudb registry.aliyuncs.com/futu_openapi/flask ./script.sh
+    sudo docker run -v /home/zhulei/mydata/:/var/lib/mysql --name mysql -e MYSQL_ROOT_PASSWORD=123456 -d registry.aliyuncs.com/futu_open/mysql
+    sudo docker run -d --name web -v /home/zhulei/app/:/app -v /etc/localtime:/etc/localtime -p 8080:8080 --link mysql:futudb registry.aliyuncs.com/futu_open/flask ./script.sh
 
 
 ## <a name='api'></a>参考API说明文档
